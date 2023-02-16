@@ -4,6 +4,7 @@ const multer = require('multer');
 
 exports.add = async(req,res,next)=>{
   console.log("000000000000000000000000000000000000000000");
+  JSON.stringify(req.fields)
   console.log(req.body);
   console.log("888888888888888888888888888888888");
     let{fullName,phoneNumber,password,age} = req.body
