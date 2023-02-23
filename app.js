@@ -11,7 +11,7 @@ const multer = require("multer");
 const app = express(); 
 
 app.use(bodyparser.json());
-app.use(bodyparser.urlencoded({ extended:true }));
+app.use(bodyparser.urlencoded({ extended:false }));
 // app.use(formidable());
 
 

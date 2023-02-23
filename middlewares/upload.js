@@ -18,7 +18,13 @@ const storage = multer.diskStorage({
       },
     })
 
-exports.uploadfile = multer({storage:storage,fileFilter:imageFilter}).single("save");
+const uploadfile = multer({storage:storage,fileFilter:imageFilter}).any("save");
+
+uploadfile((req,res,file)=>{
+
+})
+
+module.exports=uploadfile;
 
 
  
